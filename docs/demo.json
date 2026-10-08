@@ -1,0 +1,192 @@
+[
+  {
+    "place": "Seoul, South Korea",
+    "years": 30,
+    "frost_years": 30,
+    "spring_frost_years": 30,
+    "threshold_c": 0.0,
+    "last_spring_frost": {
+      "median": "Apr 02",
+      "safe_90": "Apr 12"
+    },
+    "first_fall_frost": {
+      "early_10": "Oct 30",
+      "median": "Nov 10"
+    },
+    "chance_frost_by_next_week": 0.0,
+    "days_until_median_first_frost": 32,
+    "facts": [
+      "No frost in the next 7 days in any of the past 30 years.",
+      "Typical first frost is in about 32 days (Nov 10); an early year is Oct 30.",
+      "This is garlic and tulip planting season.",
+      "Next spring, frost-tender seedlings are safe outside after Apr 12 in 9 of 10 years."
+    ],
+    "plan": "Hello Seoul adventurers! Let's make the most of this frost-free week! \n\nEnjoy a hike in Bukhansan National Park, cycle along the Han River, or explore the beautiful gardens of Namsan. \nThis is perfect garlic and tulip planting season – get those bulbs in the ground! \nProtect your tender seedlings – they’ll be safe after April 12th!"
+  },
+  {
+    "place": "Minneapolis, United States",
+    "years": 30,
+    "frost_years": 30,
+    "spring_frost_years": 30,
+    "threshold_c": 0.0,
+    "last_spring_frost": {
+      "median": "Apr 22",
+      "safe_90": "May 04"
+    },
+    "first_fall_frost": {
+      "early_10": "Oct 10",
+      "median": "Oct 24"
+    },
+    "chance_frost_by_next_week": 0.27,
+    "days_until_median_first_frost": 16,
+    "facts": [
+      "Frost by next week happened in 27% of past years.",
+      "Typical first frost is in about 16 days (Oct 24); an early year is Oct 10.",
+      "Harvest tender crops (tomatoes, basil, peppers) soon.",
+      "This is garlic and tulip planting season.",
+      "Next spring, frost-tender seedlings are safe outside after May 04 in 9 of 10 years."
+    ],
+    "plan": "Okay, let’s get you enjoying Minneapolis this week! \n\nFirst, explore a crisp walk along the Chain of Lakes – it’s beautiful before the frost! \nSecond, grab a pumpkin and head to a local orchard for some fall fun. \nThird, enjoy a bike ride through Minnehaha Park before the temperatures drop. \n\nDon’t forget to harvest those tomatoes, peppers, and basil – it's your last chance! Plant garlic and tulips now for a gorgeous spring."
+  },
+  {
+    "place": "London, United Kingdom",
+    "years": 30,
+    "frost_years": 30,
+    "spring_frost_years": 30,
+    "threshold_c": 0.0,
+    "last_spring_frost": {
+      "median": "Apr 06",
+      "safe_90": "Apr 19"
+    },
+    "first_fall_frost": {
+      "early_10": "Oct 30",
+      "median": "Nov 16"
+    },
+    "chance_frost_by_next_week": 0.0,
+    "days_until_median_first_frost": 38,
+    "facts": [
+      "No frost in the next 7 days in any of the past 30 years.",
+      "Typical first frost is in about 38 days (Nov 16); an early year is Oct 30.",
+      "This is garlic and tulip planting season.",
+      "Next spring, frost-tender seedlings are safe outside after Apr 19 in 9 of 10 years."
+    ],
+    "plan": "Hello there! Let’s make the most of this fantastic, frost-free weather this week – why not try a canal towpath walk, a riverside picnic, or explore Richmond Park? \nDon't forget to get planting your garlic and tulips now! \nProtect your tender seedlings – they’ll be safe out after April 19th, as usual."
+  },
+  {
+    "place": "Toronto, Canada",
+    "years": 30,
+    "frost_years": 30,
+    "spring_frost_years": 30,
+    "threshold_c": 0.0,
+    "last_spring_frost": {
+      "median": "Apr 23",
+      "safe_90": "May 03"
+    },
+    "first_fall_frost": {
+      "early_10": "Oct 31",
+      "median": "Nov 06"
+    },
+    "chance_frost_by_next_week": 0.0,
+    "days_until_median_first_frost": 30,
+    "facts": [
+      "No frost in the next 7 days in any of the past 30 years.",
+      "Typical first frost is in about 30 days (Nov 06); an early year is Oct 31.",
+      "This is garlic and tulip planting season.",
+      "Next spring, frost-tender seedlings are safe outside after May 03 in 9 of 10 years."
+    ],
+    "plan": "Hey Toronto! Let's make the most of this amazing weather! \n\nThis week, explore the trails at High Park, cycle along the Waterfront trail, or enjoy a picnic in Trinity Bellwoods. \nDon't forget to plant your garlic and tulips – it's the perfect time! \nProtect your tender seedlings; they’ll be ready for spring by May 03!"
+  },
+  {
+    "place": "Denver, United States",
+    "years": 30,
+    "frost_years": 30,
+    "spring_frost_years": 30,
+    "threshold_c": 0.0,
+    "last_spring_frost": {
+      "median": "May 07",
+      "safe_90": "May 20"
+    },
+    "first_fall_frost": {
+      "early_10": "Sep 28",
+      "median": "Oct 14"
+    },
+    "chance_frost_by_next_week": 0.67,
+    "days_until_median_first_frost": 6,
+    "facts": [
+      "Frost by next week happened in 67% of past years.",
+      "Typical first frost is in about 6 days (Oct 14); an early year is Sep 28.",
+      "Harvest tender crops (tomatoes, basil, peppers) soon.",
+      "Next spring, frost-tender seedlings are safe outside after May 20 in 9 of 10 years."
+    ],
+    "plan": "Okay, Denver adventurers! Let’s make the most of this beautiful fall weather. \n\nThis week, hike Red Rocks, explore City Park, and bike the Cherry Creek Trail. \nDon't forget to harvest those tomatoes, basil, and peppers before the frost! \nProtect your frost-tender seedlings – May 20th is your key date for bringing them indoors!"
+  },
+  {
+    "place": "Sapporo, Japan",
+    "years": 30,
+    "frost_years": 30,
+    "spring_frost_years": 30,
+    "threshold_c": 0.0,
+    "last_spring_frost": {
+      "median": "Apr 24",
+      "safe_90": "May 01"
+    },
+    "first_fall_frost": {
+      "early_10": "Oct 26",
+      "median": "Nov 12"
+    },
+    "chance_frost_by_next_week": 0.0,
+    "days_until_median_first_frost": 35,
+    "facts": [
+      "No frost in the next 7 days in any of the past 30 years.",
+      "Typical first frost is in about 35 days (Nov 12); an early year is Oct 26.",
+      "This is garlic and tulip planting season.",
+      "Next spring, frost-tender seedlings are safe outside after May 01 in 9 of 10 years."
+    ],
+    "plan": "Okay, Sapporo adventurers! Let's make the most of this amazing weather! \n\nThis week, enjoy a brisk hike up Mount Youkun, explore Odori Park’s beautiful blooms, and take a cycling tour along the coast. \nDon’t forget to plant your garlic and tulips – it's the perfect time! \nProtect your frost-tender seedlings; they’ll be safe after May 1st!"
+  },
+  {
+    "place": "Berlin, Germany",
+    "years": 30,
+    "frost_years": 30,
+    "spring_frost_years": 30,
+    "threshold_c": 0.0,
+    "last_spring_frost": {
+      "median": "Apr 12",
+      "safe_90": "Apr 24"
+    },
+    "first_fall_frost": {
+      "early_10": "Oct 21",
+      "median": "Nov 12"
+    },
+    "chance_frost_by_next_week": 0.0,
+    "days_until_median_first_frost": 36,
+    "facts": [
+      "No frost in the next 7 days in any of the past 30 years.",
+      "Typical first frost is in about 36 days (Nov 12); an early year is Oct 21.",
+      "This is garlic and tulip planting season.",
+      "Next spring, frost-tender seedlings are safe outside after Apr 24 in 9 of 10 years."
+    ],
+    "plan": "Hello Berlin adventurers! Let’s make the most of this amazing weather! \n\nThis week, explore the Tiergarten, cycle along the Spree, or wander through the botanical garden. \nPlant your garlic and tulips – it’s the perfect time! \nProtect your tender seedlings, as next spring’s frost is still far off!"
+  },
+  {
+    "place": "Melbourne, Australia",
+    "years": 30,
+    "frost_years": 1,
+    "spring_frost_years": 7,
+    "threshold_c": 0.0,
+    "last_spring_frost": {
+      "median": "Jul 19",
+      "safe_90": "Aug 15"
+    },
+    "first_fall_frost": {
+      "early_10": "Jun 18",
+      "median": "Jun 18"
+    },
+    "chance_frost_by_next_week": 0.0,
+    "days_until_median_first_frost": 253,
+    "facts": [
+      "Frost is rare here: it happened in only 1 of the past 30 years."
+    ],
+    "plan": "Okay, let’s get you exploring Melbourne this week! \n\nYou can hit up the beautiful trails in the Dandenong Ranges for a bushwalk, enjoy a picnic by the Yarra River, or catch some waves at St Kilda Beach. \nDon't forget to explore the Royal Botanic Gardens - it’s stunning! \nProtect your frost-sensitive seedlings – it's unlikely, but best to be prepared!"
+  }
+]

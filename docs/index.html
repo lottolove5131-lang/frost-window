@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frost Window</title>
+<style>
+:root{--bg:#f6f3ea;--card:#fffdf7;--ink:#1f2a1f;--muted:#5d6b5d;--accent:#3d7a4a;--frost:#5b8fb9;--line:#ddd6c4}
+@media (prefers-color-scheme:dark){:root{--bg:#141a15;--card:#1c241d;--ink:#e8eee6;--muted:#9fb09f;--accent:#7fc28d;--frost:#8fb9dd;--line:#2c382d}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;word-break:keep-all;overflow-wrap:break-word}
+header{max-width:880px;margin:0 auto;padding:40px 16px 8px}
+h1{margin:0;font-size:2.2rem;letter-spacing:-.02em}
+header p{color:var(--muted);margin:.4rem 0 0}
+main{max-width:880px;margin:0 auto;padding:16px}
+.pick{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 20px}
+.pick button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 14px;border-radius:999px;cursor:pointer;font:inherit}
+.pick button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:14px 0}
+.stat{border:1px solid var(--line);border-radius:10px;padding:12px}
+.stat b{display:block;font-size:1.35rem;color:var(--frost)}
+.stat span{color:var(--muted);font-size:.9rem}
+h2{margin:0;font-size:1.4rem}
+h3{margin:18px 0 6px;font-size:1rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+ul{margin:0;padding-left:1.1rem}
+.plan{white-space:pre-wrap;background:var(--bg);border-radius:10px;padding:14px;border:1px dashed var(--line)}
+footer{max-width:880px;margin:0 auto;padding:24px 16px 48px;color:var(--muted);font-size:.9rem}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<header>
+<h1>Frost Window</h1>
+<p>30 years of daily lows, a frost forecast you can count on, and a four-line "go outside" plan written by Gemma running on a laptop.</p>
+</header>
+<main>
+<div class="pick" id="pick" role="group" aria-label="Choose a city"></div>
+<section class="card" id="card" aria-live="polite"></section>
+</main>
+<footer>
+Numbers: <a href="https://open-meteo.com/">Open-Meteo</a> historical archive (CC BY 4.0), last 30 years, low at or below 0 °C.
+Plans: Gemma 3 4B via <a href="https://ollama.com/">Ollama</a>, generated locally when this page was built.
+Run it for your own town: <a href="https://github.com/lottolove5131-lang/frost-window">source on GitHub</a>.
+</footer>
+<script>
+fetch('demo.json').then(r=>r.json()).then(data=>{
+  const pick=document.getElementById('pick'), card=document.getElementById('card');
+  const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function show(i){
+    const d=data[i], ff=d.first_fall_frost||{}, ls=d.last_spring_frost||{};
+    [...pick.children].forEach((b,j)=>b.setAttribute('aria-pressed',j===i));
+    card.innerHTML=`<h2>${esc(d.place)}</h2>
+    <div class="grid">
+      <div class="stat"><b>${esc(ff.median||'none')}</b><span>typical first fall frost</span></div>
+      <div class="stat"><b>${esc(ff.early_10||'none')}</b><span>an early year (1 in 10)</span></div>
+      <div class="stat"><b>${Math.round((d.chance_frost_by_next_week||0)*100)}%</b><span>past years with frost by next week</span></div>
+      <div class="stat"><b>${esc(ls.safe_90||'none')}</b><span>spring planting safe in 9 of 10 years</span></div>
+    </div>
+    <h3>Facts sent to the model</h3><ul>${d.facts.map(f=>`<li>${esc(f)}</li>`).join('')}</ul>
+    <h3>This week's plan</h3><div class="plan">${esc(d.plan)}</div>`;
+  }
+  data.forEach((d,i)=>{const b=document.createElement('button'); b.textContent=d.place.split(',')[0]; b.onclick=()=>show(i); pick.appendChild(b);});
+  show(0);
+});
+</script>
+</body>
+</html>
